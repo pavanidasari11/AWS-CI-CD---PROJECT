@@ -3,8 +3,7 @@ version: 0.2
 phases:
   build:
     commands:
-      - echo Deploying to S3...
-      - aws s3 sync . s3://student-portfolio-pavani --delete --exclude ".git/*" --exclude "buildspec.yml"
+      - echo Build completed!
 
 artifacts:
   files:
