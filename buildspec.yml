@@ -4,8 +4,11 @@ phases:
   build:
     commands:
       - echo "Building Student Portfolio Website"
+      - echo "Build completed successfully"
 
 artifacts:
   files:
     - index.html
     - style.css
+    - script.js
+    - appspec.yml
