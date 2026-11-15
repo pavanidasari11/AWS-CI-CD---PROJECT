@@ -3,12 +3,9 @@ version: 0.2
 phases:
   build:
     commands:
-      - echo "Building Student Portfolio Website"
-      - echo "Build completed successfully"
+      - echo Deploying to S3...
+      - aws s3 sync . s3://student-portfolio-pavani --delete --exclude ".git/*" --exclude "buildspec.yml"
 
 artifacts:
   files:
-    - index.html
-    - style.css
-    - script.js
-    - appspec.yml
+    - '**/*'
